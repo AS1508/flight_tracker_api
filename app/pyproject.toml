@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "flight-tracker-api"
+version = "1.0.0"
+description = "API para consultar información de vuelos usando OpenSky Network"
+authors = ["Tu Nombre <tu.email@ejemplo.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
