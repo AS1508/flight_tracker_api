@@ -7,6 +7,7 @@ app = FastAPI(
   version="1.0.0"
 )
 
+app.include_router(auth.router, prefix="/api")
 app.include_router(flights.router, prefix="/api")
 
 @app.get("/")
