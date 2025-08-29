@@ -8,7 +8,7 @@ router = APIRouter(
 )
 
 @router.get("/{callsign}", response_model=schemas.FlightState)
-def get_flight_by_callsign(callsign: str, user: Depends(get_current_user)):
+def get_flight_by_callsign(callsign: str, user: dict = Depends(get_current_user)):
   flight_data = services.get_flight_by_callsign(callsign)
   if not flight_data or "error" in flight_data:
     raise HTTPException(status_code=404, detail="Flight with callsign {callsign} not found / Data source error")

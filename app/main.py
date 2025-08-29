@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .routers import flights
+from .routers import flights, auth
 
 app = FastAPI(
   title="Flight Tracker API",
