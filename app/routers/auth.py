@@ -1,5 +1,7 @@
-from fastapi import APIRouter, Depends, HTTPException
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi import APIRouter, Depends, HTTPException, Form
+from fastapi.security import OAuth2PasswordBearer
+from pydantic import BaseModel
+from ..auth_service import get_token
 
 router = APIRouter(tags=["auth"])
 
@@ -13,11 +15,21 @@ def fake_decode_token(token):
 async def get_current_user(token: str = Depends(oauth2_scheme)):
     return fake_decode_token(token)
 
+class ClientCredentialsForm(BaseModel):
+    client_id: str
+    client_secret: str
+
+def client_credentials_form(
+    client_id: str = Form(...),
+    client_secret: str = Form(...),
+):
+    return ClientCredentialsForm(client_id=client_id, client_secret=client_secret)
+
 @router.post("/token")
-async def login(form_data: OAuth2PasswordRequestForm = Depends()):
-    if form_data.username != "usuario" or form_data.password != "contraseña":
+async def login(form_data: ClientCredentialsForm = Depends(client_credentials_form)):
+    if not form_data.client_id or not form_data.client_secret:
         raise HTTPException(
             status_code=401,
-            detail="Usuario o contraseña incorrectos",
+            detail="Client ID or Client Secret incorrect",
         )
-    return {"access_token": "example_token", "token_type": "bearer"}
+    return get_token(form_data.client_id, form_data.client_secret)
