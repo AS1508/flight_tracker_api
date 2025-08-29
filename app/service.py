@@ -1,6 +1,5 @@
 import requests
 import os
-import routes
 
 URL_BASE = "https://opensky-network.org/api/"
 def get_flight_data_by_callsign(callsign: str):

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2AuthorizationCodeBearer
-from apps.service import get_flight_data_by_callsign
+from service import get_flight_data_by_callsign
 
 oauth2_scheme = OAuth2AuthorizationCodeBearer(tokenUrl="token")
 router = APIRouter()
