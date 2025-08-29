@@ -37,7 +37,7 @@ Abre [http://localhost:8000/docs](http://localhost:8000/docs) para ver la docume
 
 ## Autenticación
 
-1. Usa `/api/token` con usuario `usuario` y contraseña `contraseña` para obtener un token.
+1. Usa `/api/token` con client_id y client_secret para obtener un token (Para obtenerlo ir a la web https://opensky-network.org/my-opensky/account). El formato debe ser `x-www-form-urlencoded`
 2. Usa ese token como `Bearer` en los endpoints protegidos.
 
 ---
