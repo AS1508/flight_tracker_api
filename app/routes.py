@@ -17,5 +17,5 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
 async def flight_by_callsign(callsign: str, user: dict = Depends(get_current_user)):
     flight_data = get_flight_data_by_callsign(callsign)
     if flight_data is None:
-        raise HTTPException(status_code=404, detail=f"Flight with callsign {callsign} not found")
+        raise HTTPException(status_code=404, detail="Flight not found")
     return flight_data
