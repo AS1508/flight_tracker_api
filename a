@@ -1,0 +1,77 @@
+[33mcommit 2bd7da2682eb989f9c0f29f8c0d0f947c9e0e219[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfork1[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 10:31:43 2025 -0300
+
+    feat: add README and pyproject
+
+[33mcommit 0bea474e94481e6fa75b665e359d1ff22b57d644[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 10:17:45 2025 -0300
+
+    chore: update __pycache__ files for main, init, schemas, services, and routers
+
+[33mcommit 5a8dc615b63280c04b7f235f045e9410a754dc65[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 10:14:39 2025 -0300
+
+    adjusting some things
+
+[33mcommit e088cfae75945eaa4f0650b40e6950735b266216[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 10:13:54 2025 -0300
+
+    adjusting some things
+
+[33mcommit 3397e2d222572ef6026e28f7ab4ee663882ed5d0[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 10:09:27 2025 -0300
+
+    refactor: refactoring the code
+
+[33mcommit b24a854766afa6743dd44945425d0e6da105b6e7[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 09:48:06 2025 -0300
+
+    feat: add main.py
+
+[33mcommit c7891c3ac6f46370022ffa6c614286c86805ae30[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 09:42:21 2025 -0300
+
+    feat: add flights.py and other random changes
+
+[33mcommit 4a5c95e480e7e30674d21d60a28c1f6c2b2df18c[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 09:33:21 2025 -0300
+
+    fix: change some lines of code :)
+
+[33mcommit d2a2444d77ab91ce6c6b1f573702a1df9c354a89[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 09:22:46 2025 -0300
+
+    feat: add services.py
+
+[33mcommit 67f2c9322bb01fbff332725cfee596d591a8a47e[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 09:21:58 2025 -0300
+
+    add: routes for oatuh2
+
+[33mcommit 167c7b9aa881196dfcbe0eb32e8a6d053bdd4b07[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 08:46:21 2025 -0300
+
+    feat: add schema for flight's dataview
+
+[33mcommit 48750496905de11f2296fd8e9c3e2f1a141b1ea5[m
+Author: sssebisss <sebastianmartinezrodio@gmail.com>
+Date:   Fri Aug 29 08:35:56 2025 -0300
+
+    Initial workspace
+
+[33mcommit b1b145ed7ae61023ef620beb38af5ef37d0358cd[m[33m ([m[1;33mtag: [m[1;33minitial-workspace[m[33m)[m
+Author: Sebastián Martínez <70720135+AS1508@users.noreply.github.com>
+Date:   Fri Aug 29 07:31:08 2025 -0300
+
+    Initial commit
